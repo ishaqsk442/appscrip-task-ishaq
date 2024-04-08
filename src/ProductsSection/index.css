@@ -1,0 +1,21 @@
+.products-list{
+   display: flex;
+   flex-direction: row;
+  /* flex-wrap: wrap; */
+    list-style-type:none;
+width: 100vw;
+
+}
+
+@media (max-width:576px) {
+    .products-list{
+        display: block;
+    }
+}
+
+@media screen and (min-width:576px) {
+    .products-list{
+        display: none;
+    }
+}
+

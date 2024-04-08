@@ -1,0 +1,18 @@
+.nav-links-cont{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+    /* display: inline-block; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: auto;
+    font-weight: bolder;
+    /* border-bottom: 1px solid grey; */
+
+}
+@media  (max-width:576px) {
+    .nav-links-cont{
+        display: none;
+    }
+}

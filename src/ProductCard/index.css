@@ -1,0 +1,20 @@
+.product-item{
+    list-style-type: none;
+    max-width: 300px;
+
+}
+.thumbnail{
+    height: 200px;
+    width: 100px;
+}
+.title{
+    font-size: 12px;
+    color: black;
+}
+.product-details{
+    display: flex;
+}
+.desc{
+    font-size: 10px;
+    color: grey;
+}

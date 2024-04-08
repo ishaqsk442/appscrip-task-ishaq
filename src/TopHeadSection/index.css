@@ -1,0 +1,32 @@
+.home-title{
+    color: grey;
+    font-size: 20px;
+}
+.span-shop{
+color: black;
+}
+.top-head-cont{
+    padding: 6px;
+}
+.top-main-head{
+    text-align: center;
+    font-size: 30px;
+}
+.top-para{
+    text-align: start;
+}
+@media screen {
+    .top-para{
+    text-align: center;
+}
+}
+.home-shop-cont{
+    display: visible;
+
+}
+
+@media screen and (min-width:576px) {
+    .home-shop-cont{
+        display: none;
+    }
+}
