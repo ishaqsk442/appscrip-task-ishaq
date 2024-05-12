@@ -1,7 +1,7 @@
 import { Component } from 'react'
 
 import ProductCard from '../ProductCard'
-
+import './index.css'
 
 class ProductsSection extends Component {
 
@@ -43,11 +43,11 @@ class ProductsSection extends Component {
             const { productsList } = this.state
              
             return (
-                <ul className="products-list">
-          {productsList.map(product => (
-            <ProductCard productData={product} key={product.id} />
-          ))}
-        </ul>
+            <ul className="products-list">
+              {productsList.map(product => (
+                <ProductCard productData={product} key={product.id} />
+              ))}
+            </ul>
             )
         }
 

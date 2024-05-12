@@ -1,9 +1,10 @@
 .products-list{
    display: flex;
-   flex-direction: row;
-  /* flex-wrap: wrap; */
+   flex-wrap: wrap;
     list-style-type:none;
-width: 100vw;
+    /* min-width: 100vw; */
+    /* border: 1px solid blueviolet; */
+    margin-left: 0px;
 
 }
 
@@ -15,7 +16,8 @@ width: 100vw;
 
 @media screen and (min-width:576px) {
     .products-list{
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 

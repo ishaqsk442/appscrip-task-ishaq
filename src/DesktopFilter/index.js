@@ -11,6 +11,11 @@ import ProductsSection from "../ProductsSection";
 
 const DesktopFilter = () => {
   const [showFilter, setShowFilter] = useState(true);
+  const [select, setSelect] = useState("Recomended");
+
+  const onSelect = (event) => {
+    setSelect({ select: event.target.value })
+  }
 
   const onClickshow = () => {
     setShowFilter(!showFilter);
@@ -24,21 +29,23 @@ const DesktopFilter = () => {
       
         <div className="recommended-container">
           <div className="items-container">
-            <p className="items">3425 ITEMS</p>
+            
             {showFilter ? (
               <div className="hide-container" onClick={onClickshow}>
+                <p className="items">3425 ITEMS</p>
                 <IoIosArrowForward />
                 <p className="filter-heading">SHOW FILTER</p>
               </div>
             ) : (
               <div className="hide-container" onClick={onClickHide}>
+                <p className="items">3425 ITEMS</p>
                 <IoIosArrowBack />
                 <p className="filter-heading">HIDE FILTER</p>
               </div>
-                      )}
-                      <select className="select-container">
+            )}
+          <select className="select-container" onChange={onSelect}  value={select}>
             <option className="recom">
-              <TiTick /> RECOMMENDED
+              RECOMMENDED
             </option>
             <option className="option">Newest first</option>
             <option className="option">popular</option>
@@ -48,8 +55,8 @@ const DesktopFilter = () => {
           </div>
           
         
-        <hr />
-      </div>
+          <hr />
+        </div>
       
       {/* filter and products */}
       <div className="filter-products-container">
@@ -241,11 +248,12 @@ const DesktopFilter = () => {
             </details>
             <hr />
           </div>
-              )}
+        )}
 
+        <ProductsSection />
               
-              <ProductsSection />
-          </div>
+      </div>
+      
           
       </div>
      

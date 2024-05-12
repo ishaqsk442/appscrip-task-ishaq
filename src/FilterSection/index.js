@@ -8,8 +8,8 @@ const FilterSection = () => {
         <>
         
             <div className='filters-cont'>
-                <DesktopFilter />
-            <div className='mobile-cont'>
+                
+              <div className='mobile-cont'>
             <div className='mobile'>
 
                
@@ -179,8 +179,9 @@ const FilterSection = () => {
             </select>
                 </div>
                 </div>
-                <ProductsSection />
-                </div>
+          {/* <ProductsSection /> */}
+              <DesktopFilter />
+            </div>
             
             </>
     )

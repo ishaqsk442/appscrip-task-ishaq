@@ -15,7 +15,10 @@ const NavSection = ()=>{
             <CgMenu className="mobile-menu"/>
             <img className = "logo" src="https://res.cloudinary.com/dpetyh8cc/image/upload/v1712522817/Logo_bfv8uu.svg" alt= "logo"/>
         </div>
-        <h1>LOGO</h1>
+        <div>
+            <h1>LOGO</h1>
+        </div>
+       
         <div className="icons-cont">
             <AiOutlineSearch className="icons" />
             <AiOutlineHeart  className="icons"/>
@@ -29,7 +32,7 @@ const NavSection = ()=>{
             
     <DesktopNavLinks />
             
-        </>
+    </>
 )
 }
 
